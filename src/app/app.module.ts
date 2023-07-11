@@ -18,6 +18,8 @@ import { RecipesListComponent } from './recipes-list/recipes-list.component';
 import { HeaderComponent } from './core/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RecipesFilterComponent } from './recipes-filter/recipes-filter.component';
+import { RecipeCreationComponent } from './recipe-creation/recipe-creation.component';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { RecipesFilterComponent } from './recipes-filter/recipes-filter.componen
     RecipesListComponent,
     HeaderComponent,
     HomeComponent,
-    RecipesFilterComponent
+    RecipesFilterComponent,
+    RecipeCreationComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { RecipesFilterComponent } from './recipes-filter/recipes-filter.componen
     RatingModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RadioButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
