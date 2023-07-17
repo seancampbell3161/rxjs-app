@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { RecipesFilterComponent } from './recipes-filter/recipes-filter.component';
 import { RecipeCreationComponent } from './recipe-creation/recipe-creation.component';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     HeaderComponent,
     HomeComponent,
     RecipesFilterComponent,
-    RecipeCreationComponent
+    RecipeCreationComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     BrowserModule,
