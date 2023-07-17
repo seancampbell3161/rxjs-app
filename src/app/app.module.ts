@@ -21,6 +21,7 @@ import { RecipesFilterComponent } from './recipes-filter/recipes-filter.componen
 import { RecipeCreationComponent } from './recipe-creation/recipe-creation.component';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
+import { FileUploadModule } from 'primeng/fileupload'
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    RadioButtonModule
+    RadioButtonModule,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

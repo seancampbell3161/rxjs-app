@@ -60,6 +60,14 @@
     </div>
   </div>
 
+  <div class="form-row">
+    <div class="col-12">
+      <label for="imageUrl">ImageUrl</label>
+      <ng-container *ngIf="uploadRecipeImages$ | async"></ng-container>
+      <p-fileUpload name="imageUrl" [multiple]=true [customUpload]="true" (uploadHandler)="onUpload($event.files)"></p-fileUpload>
+    </div>
+  </div>
+
 
 </form>
 
